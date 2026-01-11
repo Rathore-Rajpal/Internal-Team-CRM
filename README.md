@@ -1,8 +1,8 @@
-# Tasknova - Team Task & Leave Management
+# TeamFlow - Team Task & Leave Management
 
 ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/Tasknova/TeamManagement?utm_source=oss&utm_medium=github&utm_campaign=Tasknova%2FTeamManagement&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 
-A comprehensive team management application built with React, TypeScript, and Supabase. Tasknova provides powerful tools for task management, leave tracking, and team collaboration with role-based access control.
+A comprehensive team management application built with React, TypeScript, and Supabase. TeamFlow provides powerful tools for task management, leave tracking, and team collaboration with role-based access control.
 
 ## Features
 
@@ -22,6 +22,24 @@ A comprehensive team management application built with React, TypeScript, and Su
 - **State Management**: React Context API
 - **Routing**: React Router DOM
 
+## Live Demo
+
+🚀 **[internalcrm.rathorerajpal.live](https://internalcrm.rathorerajpal.live)**
+
+## Demo Credentials
+
+### Admin Login
+- **Email**: admin@rathorerajpal.live
+- **Password**: Pass@Admin
+
+### Project Manager Login
+- **Email**: pm@rathorerajpal.live
+- **Password**: Pass@PM
+
+### Employee Login
+- **Email**: employee@rathorerajpal.live
+- **Password**: Pass@Employee
+
 ## Getting Started
 
 1. Clone the repository
@@ -29,12 +47,6 @@ A comprehensive team management application built with React, TypeScript, and Su
 3. Set up your Supabase project and configure environment variables
 4. Run the development server: `npm run dev`
 
-## Demo Accounts
-
-- **Admin**: admin@company.com / password123
-- **Project Manager**: pm@company.com / password123  
-- **Team Member**: john@company.com / password123
-
 ---
 
-© 2024 Tasknova. All rights reserved.
+© 2024 TeamFlow. Built by [Rajpal Rathore](https://www.rathorerajpal.live) | [GitHub](https://github.com/Rathore-Rajpal)

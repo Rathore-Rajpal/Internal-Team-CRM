@@ -29,17 +29,17 @@ const LoginForm: React.FC<LoginFormProps> = ({ role, onBack }) => {
     <Card className="w-full max-w-md">
       <div className="text-center mb-6">
         <div className="flex justify-center mb-4">
-          <img 
-            src="/logo.png" 
-            alt="Tasknova Logo" 
-            className="h-12 w-auto"
-          />
+          <div className="bg-gradient-to-br from-indigo-500 via-purple-500 to-cyan-500 p-4 rounded-2xl shadow-lg transform hover:scale-105 transition-transform">
+            <svg className="h-12 w-12 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L15 12L22 9L16 15L20 22L12 18L4 22L8 15L2 9L9 12L12 2Z" />
+            </svg>
+          </div>
         </div>
         <h2 className="text-2xl font-bold text-gray-900">
           {role === 'admin' ? 'Admin' : role === 'project_manager' ? 'Project Manager' : 'Team Member'} Login
         </h2>
         <p className="text-gray-600 mt-2">
-          Sign in to access your Tasknova dashboard
+          Sign in to access your TeamFlow dashboard
         </p>
       </div>
 

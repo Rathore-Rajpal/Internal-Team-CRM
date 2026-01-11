@@ -21,20 +21,28 @@ const LandingPage: React.FC<LandingPageProps> = ({ onSelectRole }) => {
         {/* Header */}
         <div className="text-center mb-20">
           <div className="flex justify-center mb-8">
-            <div className="bg-white p-6 rounded-full shadow-2xl border-4 border-blue-100 transform hover:scale-110 transition-transform duration-300">
-              <img 
-                src="/logo2.png" 
-                alt="Tasknova Logo" 
-                className="h-20 w-auto"
-              />
+            <div className="bg-white p-8 rounded-full shadow-2xl border-4 border-gradient-to-r from-indigo-100 to-cyan-100 transform hover:scale-110 transition-transform duration-300">
+              <svg className="h-20 w-20" viewBox="0 0 24 24" fill="none">
+                <defs>
+                  <linearGradient id="landingRocketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor: '#4f46e5', stopOpacity: 1}} />
+                    <stop offset="50%" style={{stopColor: '#a855f7', stopOpacity: 1}} />
+                    <stop offset="100%" style={{stopColor: '#06b6d4', stopOpacity: 1}} />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#landingRocketGradient)" d="M12 2L15 12L22 9L16 15L20 22L12 18L4 22L8 15L2 9L9 12L12 2Z" />
+              </svg>
             </div>
           </div>
+          <h1 className="text-6xl font-bold text-gray-900 mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-600">
+            TeamFlow
+          </h1>
 
           <p className="text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
             Streamline your team's task management and leave tracking with our comprehensive, intelligent solution
           </p>
           <div className="mt-8 flex justify-center">
-            <div className="bg-gradient-to-r from-blue-500 to-teal-500 h-1 w-24 rounded-full"></div>
+            <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 h-1 w-24 rounded-full"></div>
           </div>
         </div>
 

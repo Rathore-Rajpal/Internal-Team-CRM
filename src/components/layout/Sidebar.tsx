@@ -94,17 +94,28 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, onTabChange, isOpen, setIs
              {/* Logo Section */}
        <div className="flex items-center justify-center h-16 px-4 border-b border-blue-200">
          {isOpen ? (
-           <img 
-             src="/logo2.png" 
-             alt="Tasknova" 
-             className="h-8 w-auto"
-           />
+           <div className="flex items-center gap-2">
+             <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none">
+               <defs>
+                 <linearGradient id="rocketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                   <stop offset="0%" style={{stopColor: '#4f46e5', stopOpacity: 1}} />
+                   <stop offset="100%" style={{stopColor: '#06b6d4', stopOpacity: 1}} />
+                 </linearGradient>
+               </defs>
+               <path fill="url(#rocketGradient)" d="M12 2L15 12L22 9L16 15L20 22L12 18L4 22L8 15L2 9L9 12L12 2Z" />
+             </svg>
+             <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-cyan-500 bg-clip-text text-transparent">TeamFlow</span>
+           </div>
          ) : (
-           <img 
-             src="/logo.png" 
-             alt="Tasknova" 
-             className="h-8 w-auto"
-           />
+           <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none">
+             <defs>
+               <linearGradient id="rocketGradientSmall" x1="0%" y1="0%" x2="100%" y2="100%">
+                 <stop offset="0%" style={{stopColor: '#4f46e5', stopOpacity: 1}} />
+                 <stop offset="100%" style={{stopColor: '#06b6d4', stopOpacity: 1}} />
+               </linearGradient>
+             </defs>
+             <path fill="url(#rocketGradientSmall)" d="M12 2L15 12L22 9L16 15L20 22L12 18L4 22L8 15L2 9L9 12L12 2Z" />
+           </svg>
          )}
        </div>
 
