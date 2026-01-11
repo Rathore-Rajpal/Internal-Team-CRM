@@ -43,6 +43,25 @@ const LoginForm: React.FC<LoginFormProps> = ({ role, onBack }) => {
         </p>
       </div>
 
+      {/* Demo Credentials */}
+      <div className="mb-6 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-lg">
+        <p className="text-xs font-semibold text-blue-900 mb-2">Demo Credentials:</p>
+        <div className="space-y-1 text-xs">
+          <p className="text-blue-800">
+            <span className="font-medium">Email:</span>{' '}
+            <span className="font-mono bg-white px-2 py-0.5 rounded">
+              {role === 'admin' ? 'admin@rathorerajpal.live' : role === 'project_manager' ? 'pm@rathorerajpal.live' : 'employee@rathorerajpal.live'}
+            </span>
+          </p>
+          <p className="text-blue-800">
+            <span className="font-medium">Password:</span>{' '}
+            <span className="font-mono bg-white px-2 py-0.5 rounded">
+              {role === 'admin' ? 'Pass@Admin' : role === 'project_manager' ? 'Pass@PM' : 'Pass@Employee'}
+            </span>
+          </p>
+        </div>
+      </div>
+
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
